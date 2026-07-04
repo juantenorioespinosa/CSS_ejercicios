@@ -17,14 +17,12 @@ html {
 
 header h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif; /* Unifica la fuente con el resto de la web */
-    font-size: 2.5rem; /* Tamaño un poco más grande e imponente */
-    color: #333; /* Un gris muy oscuro, más suave a la vista que el negro puro */
-    margin-top: 40px; /* Le da aire por arriba para que no se pegue al borde */
-    margin-bottom: 20px; /* Lo separa un poco del menú de navegación */
-    
-    /* ¡Un toque especial! Una sombra sutil a juego con el color cadetblue de tu menú */
-    text-shadow: 2px 2px 4px rgba(95, 158, 160, 0.4); /* 95, 158, 160 es el código RGB de cadetblue */
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(95, 158, 160, 0.4);
 }
 
 main h2 {
