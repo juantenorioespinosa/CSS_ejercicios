@@ -1,0 +1,166 @@
+/* =========================================
+   ESTILOS GENERALES Y RESETEO
+   ========================================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Usar la propiedad scroll-behavior: smooth; para dar ese efecto cuando clicke en las diferentes secciones*/
+html {
+    scroll-behavior: smooth;
+    /* Margen superior al hacer scroll para que el menú sticky no tape el contenido */
+    scroll-padding-top: 80px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; /* Unifica la fuente con el resto de la web */
+    font-size: 2.5rem; /* Tamaño un poco más grande e imponente */
+    color: #333; /* Un gris muy oscuro, más suave a la vista que el negro puro */
+    margin-top: 40px; /* Le da aire por arriba para que no se pegue al borde */
+    margin-bottom: 20px; /* Lo separa un poco del menú de navegación */
+    
+    /* ¡Un toque especial! Una sombra sutil a juego con el color cadetblue de tu menú */
+    text-shadow: 2px 2px 4px rgba(95, 158, 160, 0.4); /* 95, 158, 160 es el código RGB de cadetblue */
+}
+
+main h2 {
+    background-color:lightcoral;
+    width: 75%;
+    margin: 100px auto 0;
+    padding: 10px;
+    text-align: center;
+}
+
+main h3 {
+    margin-top: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.text {
+    text-transform: uppercase;
+}
+
+.box {
+    text-transform: capitalize;
+}
+
+.text p {
+    background-color: aqua;
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box p {
+    background-color: lightblue;
+    width: 600px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   EJERCICIOS DE SOMBRAS EN TEXTOS
+   ========================================= */
+
+/* EJERCICIO 1*/
+
+.text1 h3 {
+    margin-top: 50px;
+}
+
+.text1 p {
+    text-shadow: 3px 5px 5px rgb(40, 141, 141);
+}
+
+/* EJERCICIO 2*/
+
+.text2 p {
+    background-color:antiquewhite;
+    text-shadow: 8px 5px rgba(61, 52, 39, 0.267);
+}
+
+/* EJERCICIO 3*/
+
+.text3 p {
+    text-shadow: -15px 15px 0px #00e6e6,
+                 -28px 28px 0px #01cccc,
+                 -40px 40px 0px #00bdbd;          
+}
+
+/*EJERCICIO 4*/
+
+.text4 p {
+    background-color: antiquewhite;
+    text-shadow: 0px 5px rgba(61, 52, 39, 0.267),
+                 0px 28px 5px rgba(61, 52, 39, 0.267);
+}
+
+/* EJERCICIO 5*/
+
+.text5 p {
+    background-color:rgb(48, 48, 48);
+    color: rgba(0, 0, 0, 0.575);
+    text-shadow:2px 2px 5px rgb(70, 70, 70);
+}
+
+/* =========================================
+   EJERCICIOS DE SOMBRAS EN CAJAS
+   ========================================= */
+
+/* EJERCICIO 1*/
+
+.box1 h3 {
+    margin-top: 50px;
+}
+
+.box1 p {
+    box-shadow: 0px 0px 10px 2px grey;
+}
+
+/* EJERCICIO 2*/
+
+.box2 p {
+    box-shadow: 0px 0px 20px 2px grey inset;
+}
+
+/* EJERCIOCIO 3*/
+
+.box3 p {
+    box-shadow: 10px 10px 15px grey;
+}
+
+/* EJERCICIO 4*/
+
+.box4 p {
+    box-shadow: -10px -10px 20px grey;
+}
+
+/* EJERCICIO 5*/
+
+.box5 p {
+    margin-bottom: 100px;
+    box-shadow: 40px 20px grey;
+}

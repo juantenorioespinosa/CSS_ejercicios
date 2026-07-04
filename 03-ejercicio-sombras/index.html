@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Efectos CSS: Sombras y Menú Desplegable</title>
+    <meta name="description" content="Ejercicio de menú de navegación con desplegable y estilos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/nav.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <header>
+      <h1>Sombras y Menús Desplegables</h1>
+    </header>
+
+    <!-- Menú independiente (fuera del header) para que el heder no lo atrape y pueda convertirse en sticky -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#textos">Textos</a>
+          <ul>
+            <li><a href="#texto-1">Texto 1</a></li>
+            <li><a href="#texto-2">Texto 2</a></li>
+            <li><a href="#texto-3">Texto 3</a></li>
+            <li><a href="#texto-4">Texto 4</a></li>
+            <li><a href="#texto-5">Texto 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#cajas">Cajas</a>
+          <ul>
+            <li><a href="#caja-1">Caja 1</a></li>
+            <li><a href="#caja-2">Caja 2</a></li>
+            <li><a href="#caja-3">Caja 3</a></li>
+            <li><a href="#caja-4">Caja 4</a></li>
+            <li><a href="#caja-5">Caja 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  
+    <main>
+
+      <section id="textos" class="text">
+        <h2>Sombras en Textos</h2>
+
+        <div id="texto-1" class="text1">
+          <h3>texto-1</h3>
+          <p>ipsum</p>
+        </div>
+
+        <div id="texto-2" class="text2">
+          <h3>texto-2</h3>
+          <p>ipsum</p>
+        </div>
+
+        <div id="texto-3" class="text3">
+          <h3>texto-3</h3>
+          <p>ipsum</p>
+        </div>
+
+        <div id="texto-4" class="text4">
+          <h3>texto-4</h3>
+          <p>ipsum</p>
+        </div>
+
+        <div id="texto-5" class="text5">
+          <h3>texto-5</h3>
+          <p>ipsum</p>
+        </div>
+
+      </section>
+      
+      <section id="cajas" class="box">
+        <h2>Sombras en Cajas</h2>
+
+        <div id="caja-1" class="box1">
+          <h3>caja-1</h3>
+          <p>basic drop shadow</p>
+        </div>
+
+        <div id="caja-2" class="box2">
+          <h3>caja-2</h3>
+          <p>inner shadow</p>
+        </div>
+
+        <div id="caja-3" class="box3">
+          <h3>caja-3</h3>
+          <p>offset drop shadow (bottom right)</p>
+        </div>
+
+        <div id="caja-4" class="box4">
+          <h3>caja-4</h3>
+          <p>offset drop shadow (Top Left)</p>
+        </div>
+
+        <div id="caja-5" class="box5">
+          <h3>caja-5</h3>
+          <p>horizontal offset value</p>
+        </div>
+
+      </section>
+      
+    </main>
+
+
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

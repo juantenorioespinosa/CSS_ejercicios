@@ -1,0 +1,84 @@
+/* Convierte el menú en "pegajoso". 
+  Se comporta como un elemento normal hasta que alcanza el píxel 0 de la pantalla (top: 0), 
+  momento en el que se queda anclado mientras el usuario sigue bajando.
+*/
+nav {
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Obliga al menú a estar siempre en primer plano */
+}
+
+.menu {
+    list-style: none;   /* Elimina las viñetas (puntos) que el navegador aplica a las listas por defecto */
+    background-color:cadetblue;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.menu li {
+    position: relative;   /*position: relative ancla el submenú desplegable a este ítem principal.*/
+    /*Al ser hijo de un contenedor Flexbox, esta regla hace que todos los ítems se expandan por igual para llenar el espacio vacío del menú.*/
+    flex-grow: 1;
+}
+
+.menu li a {
+    text-decoration: none;   /*Quita el subrayado del texto.*/
+    padding: 20px 0;  
+    display: block;   /*convierte el enlace en un bloque para que toda el área sea "clickeable", no solo la palabra.*/
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.menu li:hover > a{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li > a:active {
+    color: cadetblue;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu a:hover {
+    background-image: linear-gradient(to right, black 10%, cadetblue, black 90%);
+}
+
+.menu ul {
+    /* Lógica del submenú desplegable:
+  - display: none; -> Mantiene el submenú oculto hasta que hagamos :hover en el <li> padre.
+  - position: absolute; -> Saca al submenú del flujo normal del documento para que "flote" y no deforme la barra de navegación principal. Se ancla a su padre más cercano con position: relative.
+  - width: 100%; -> Le obliga a medir exactamente el mismo ancho que el <li> padre del que cuelga.
+  - top: 100%; left: 0; -> Las coordenadas exactas. Lo empuja hacia abajo el 100% de la altura del padre (para que empiece justo donde termina el botón principal) y lo alinea perfectamente a la izquierda.
+*/
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    color: white;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+body section {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
